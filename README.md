@@ -18,7 +18,7 @@ A production-ready multi-language translation service built with FastAPI, featur
 1. Clone the repository:
 
 ```bash
-git clone 
+git clone https://github.com/Hpro444/TranslateIT.git
 cd TranslateIt
 ```
 
@@ -92,10 +92,10 @@ microsoft_region =
 Sensitive values such as translation API keys should live in a `.env` file rather than `config.ini`. Copy `.env.example` to `.env`, fill in the keys you actually need, and those values will automatically override the config file each time the application starts.
 
 ```ini
-LIBRE_API_KEY=
-YANDEX_API_KEY=
-MICROSOFT_API_KEY=
-MICROSOFT_REGION=
+LIBRE_API_KEY =
+YANDEX_API_KEY =
+MICROSOFT_API_KEY =
+MICROSOFT_REGION =
 ```
 
 The repository already tracks `.env.example`, but you should **never** commit your real `.env` file. `python-dotenv` loads the variables before the rest of the configuration is applied.
